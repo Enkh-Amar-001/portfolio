@@ -214,6 +214,18 @@ body .container .introduction .bg .con .cards .card {
   }
 }
 
+@media (max-height: 700px) {
+  body .container .introduction .bg .con .cards .card {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-height: 600px) {
+  body .container .introduction .bg .con .cards .card {
+    margin-top: 2rem;
+  }
+}
+
 body .container .introduction .bg .con .cards .card img {
   border-radius: 30px;
   width: 300px;
@@ -241,6 +253,18 @@ body .container .introduction .bg .con .cards .text {
 @media (max-width: 768px) {
   body .container .introduction .bg .con .cards .text {
     margin-top: 5rem;
+  }
+}
+
+@media (max-height: 700px) {
+  body .container .introduction .bg .con .cards .text {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-height: 600px) {
+  body .container .introduction .bg .con .cards .text {
+    margin-top: 2rem;
   }
 }
 
@@ -530,3 +554,4 @@ body .container .contact .bg .date p {
   font-family: 500;
   font-size: 20px;
 }
+/*# sourceMappingURL=style.css.map */
