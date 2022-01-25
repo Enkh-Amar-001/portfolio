@@ -336,10 +336,31 @@ body .container .introduction .bg .con .cards .skill .code1 .code {
   display: block;
 }
 
-@media (max-width: 495px) {
+@media (max-width: 1000px) {
   body .container .introduction .bg .con .cards .skill .code1 .code {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@media (max-width: 666px) {
+  body .container .introduction .bg .con .cards .skill .code1 .code {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@media (max-width: 533px) {
+  body .container .introduction .bg .con .cards .skill .code1 .code {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media (max-width: 445px) {
+  body .container .introduction .bg .con .cards .skill .code1 .code {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 
@@ -387,6 +408,13 @@ body .container .introduction .bg .con .cards .skill .programs {
 body .container .introduction .bg .con .cards .skill .programs img {
   width: 70px;
   margin: .3em;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body .container .introduction .bg .con .cards .skill .programs img:hover {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 body .container .about {
