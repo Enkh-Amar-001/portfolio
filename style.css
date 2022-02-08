@@ -223,11 +223,11 @@ body .container .introduction .bg {
 
 @media (max-width: 437px) {
   body .container .introduction .bg {
-    height: 1500px;
+    height: 1550px;
   }
 }
 
-@media (max-width: 343px) {
+@media (max-width: 394px) {
   body .container .introduction .bg {
     height: 1550px;
   }
