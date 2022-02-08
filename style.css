@@ -15,7 +15,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #000000;
 }
 
 /* Handle */
@@ -202,7 +202,7 @@ body .container .introduction .bg {
   background-size: 400% 400%;
   -webkit-animation: gradient 10s ease infinite;
           animation: gradient 10s ease infinite;
-  height: 100vh;
+  min-height: 1150px;
 }
 
 @media (max-width: 1000px) {
