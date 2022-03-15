@@ -146,36 +146,5 @@
         </div>
             <!-- contact -->
     </div>
-    <script>
-    function notifyMe() {
-    if (!("Notification" in window)) {
-        alert("This browser does not support system notifications");
-    }
-    else if (Notification.permission === "granted") {
-        notify();
-    }
-    else if (Notification.permission !== 'denied') {
-        Notification.requestPermission(function (permission) {
-        if (permission === "granted") {
-            notify();
-        }
-        });
-    }
-    
-    function notify() {
-        var notification = new Notification('Сайна уу?', {
-        icon: "./images/check.ico",
-        body: "чатлахын хүсвэл",
-        });
-
-        notification.onclick = function () {
-        window.open("https://www.messenger.com/t/100009332224364");      
-        };
-        setTimeout(notification.close.bind(notification), 7000); 
-    }
-
-    }
-    notifyMe();
-    </script>
 </body>
 </html>
