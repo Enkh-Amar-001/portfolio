@@ -147,23 +147,35 @@
             <!-- contact -->
     </div>
     <script>
-        function showNotification() {
-            const Notification = new Notification("New message from dxd!", {
-                body: "hey how are you"
-            });
+    function notifyMe() {
+    if (!("Notification" in window)) {
+        alert("This browser does not support system notifications");
+    }
+    else if (Notification.permission === "granted") {
+        notify();
+    }
+    else if (Notification.permission !== 'denied') {
+        Notification.requestPermission(function (permission) {
+        if (permission === "granted") {
+            notify();
         }
-        console.log(Notification.permission);
+        });
+    }
+    
+    function notify() {
+        var notification = new Notification('Сайна уу?', {
+        icon: "./images/check.ico",
+        body: "чатлахын хүсвэл",
+        });
 
-        if (Notification.permission === "granted") {
-            showNotification();
-        }
-        else if (Notification.permission !== "denied") {
-            Notification.requestPermission().then(permission => {
-                if (permission === "granted") {
-                    showNotification();
-                }
-            });
-        }
+        notification.onclick = function () {
+        window.open("https://www.messenger.com/t/100009332224364");      
+        };
+        setTimeout(notification.close.bind(notification), 7000); 
+    }
+
+    }
+    notifyMe();
     </script>
 </body>
 </html>
