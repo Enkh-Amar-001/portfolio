@@ -146,5 +146,24 @@
         </div>
             <!-- contact -->
     </div>
+    <script>
+        function showNotification() {
+            const Notification = new Notification("New message from dxd!", {
+                body: "hey how are you"
+            });
+        }
+        console.log(Notification.permission);
+
+        if (Notification.permission === "granted") {
+            showNotification();
+        }
+        else if (Notification.permission !== "denied") {
+            Notification.requestPermission().then(permission => {
+                if (permission === "granted") {
+                    showNotification();
+                }
+            });
+        }
+    </script>
 </body>
 </html>
