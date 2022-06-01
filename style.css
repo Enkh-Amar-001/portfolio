@@ -498,6 +498,7 @@ body {
 .link .txt ul li a div p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 32px;
+  font-weight: 600;
 }
 
 section {
